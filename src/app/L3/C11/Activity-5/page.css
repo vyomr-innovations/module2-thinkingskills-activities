@@ -1,0 +1,10 @@
+.mainContainer .headingContainer {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer .headingContainer img {
+    width: 130px;
+}

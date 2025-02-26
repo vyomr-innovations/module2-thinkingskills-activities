@@ -1,0 +1,100 @@
+{
+    "L1": {
+        "C9": {
+            "Activity 1": {
+                "link": "/L1/C9/Activity-1",
+                "name": "What Would You Do?"
+            },
+            "Activity 2": {
+                "link": "/L1/C9/Activity-2",
+                "name": "What Would Captain Braveheart Do?"
+            },
+            "Activity 3": {
+                "link": "/L1/C9/Activity-3",
+                "name": "The Pros and Cons Ladder"
+            }
+        },
+        "C11": {
+            "Activity 2 ": {
+                "link": "/L1/C11/Activity-2",
+                "name": "The Savvy Store"
+            },
+            "Activity 3 ": {
+                "link": "/L1/C11/Activity-3",
+                "name": "Guess the Truth"
+            },
+            "Activity 4 ": {
+                "link": "/L1/C11/Activity-4",
+                "name": "Fix the Sequence"
+            }
+        },
+        "C14" : {
+            "Activity 2 ": {
+                "link": "/L1/C14/Activity-2",
+                "name": "Mystery Box What-If"
+            }
+        }
+    },
+    "L2": {
+        "C11": {
+            "Activity 1 ": {
+                "link": "/L2/C11/Activity-1",
+                "name": "Turtle Trails"
+            },
+            "Activity 2 ": {
+                "link": "/L2/C11/Activity-2",
+                "name": "Think, Choose, Act"
+            },
+            "Activity 5 ": {
+                "link": "/L2/C11/Activity-5",
+                "name": "Drive Into the Future"
+            },
+            "Activity 5.1 ": {
+                "link": "/L2/C11/Activity-5-1",
+                "name": "Drive Into the Future"
+            }
+        }
+    },
+    "L3": {
+        "C9": {
+            "Activity 1": {
+                "link": "/L3/C9/Activity-1",
+                "name": " The Superhero’s Mission"
+            },
+            "Activity 2": {
+                "link": "/L3/C9/Activity-2",
+                "name": "Time Management Challenge"
+            },
+            "Activity 3": {
+                "link": "/L3/C9/Activity-3",
+                "name": "Mystery Solver"
+            },
+            "Activity 4": {
+                "link": "/L3/C9/Activity-4",
+                "name": "Quiz Time"
+            }
+        },
+        "C11": {
+            "Activity 1 ": {
+                "link": "/L3/C11/Activity-1",
+                "name": "The Lemonade Stand"
+            },
+            "Activity 2 ": {
+                "link": "/L3/C11/Activity-2",
+                "name": "Moral Dilemma Stories"
+            },
+            "Activity 4 ": {
+                "link": "/L3/C11/Activity-4",
+                "name": "AI Smart Home"
+            },
+            "Activity 5 ": {
+                "link": "/L3/C11/Activity-5",
+                "name": "Robotic arm"
+            },
+            "Activity 5.1 ": {
+                "link": "/L3/C11/Activity-5-1",
+                "name": "Robotic arm"
+            }
+        }
+    }
+}

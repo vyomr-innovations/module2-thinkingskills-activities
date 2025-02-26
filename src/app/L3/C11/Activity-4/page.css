@@ -1,0 +1,28 @@
+.headingContainer {
+    font-family: 'Pacifico', cursive;
+}
+
+.mainContainer .headingContainer {
+    margin-bottom: 20px;
+}
+
+.mainContainer .headingContainer h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: #743988;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mainContainer .headingContainer img {
+    width: 200px;
+    margin-bottom: 6px;
+}
+
+.mainContainer hr{
+    border-top: 1px solid #ebc7ff;
+    border: none;
+    height: 1px;
+    background: #f9d9ff;
+    box-shadow: 0 2px 4px rgb(244 123 123 / 30%);
+}

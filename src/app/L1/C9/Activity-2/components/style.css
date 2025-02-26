@@ -1,0 +1,54 @@
+.slideShowContainer .leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slideShowContainer .leftContainer .objText {
+    color: rgb(131 2 2);
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+
+.slideShowContainer .leftContainer .objImg {
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slideShowContainer .rightContainer .selectionBtn {
+    font-size: 18px;
+    font-weight: 600;
+    background: #226068;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    width: 500px;
+}
+
+.slideShowContainer .rightContainer .selectionBtn:hover {
+    background: #0c2e33;
+}
+
+
+.resultContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultContainer .hero {
+    width: 200px;
+}
+
+.resultContainer .resultText {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 41px;
+    color: #0c4f7d;
+    font-weight: 600;
+    width: 430px;
+}

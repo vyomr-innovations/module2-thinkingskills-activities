@@ -1,0 +1,30 @@
+.slideShowContainer {
+    margin-top: 30px;
+}
+
+.mBox {
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.mBox:hover {
+    width: 305px;
+}
+
+.mObj {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.mtext {
+    font-size: 17px;
+    font-weight: 550;
+    background-color: #cb1352;
+    color: white;
+    padding: 6px 24px;
+    width: fit-content;
+    border-radius: 10px;
+}

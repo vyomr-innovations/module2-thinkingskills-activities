@@ -1,0 +1,71 @@
+.slideShowContainer img {
+    margin-bottom: 40px;
+    border: 1px solid #dd73ff;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #ebd0ff;
+    width: 350px;
+}
+
+.slideShowContainer .objectName {
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.slideShowContainer .benefitsContainerMain {
+    display: flex;
+    /* align-items: center; */
+}
+
+.slideShowContainer .benefitsContainerMain .benefitsContainer .optionOutcome {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.slideShowContainer .benefitsContainerMain .benefitsContainer{
+    text-align: left;
+}
+
+.slideShowContainer img:hover {
+    width: 355px;
+}
+
+.slideShowContainer .optionBtn {
+    color: #ffffff;
+    padding: 7px 14px;
+    font-size: 18px;
+    background: #743988;
+    border: 0px;
+    border-radius: 7px;
+    margin: 10px;
+    font-weight: 550;
+    max-width: 190px;
+}
+
+
+.slideShowContainer .optionOutcomeBtn {
+    color: #ffffff;
+    padding: 11px 14px;
+    font-size: 18px;
+    background: #4f9300;
+    border: 0px;
+    border-radius: 7px;
+    margin: 10px;
+    font-weight: 550;
+    width: 95%;
+}
+
+
+.slideShowContainer button:hover {
+    font-size: 19px;
+}
+
+.optionSelctedBtn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

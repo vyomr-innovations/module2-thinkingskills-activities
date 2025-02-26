@@ -1,0 +1,106 @@
+.sequenceConatiner .sequenceText{
+    text-align: center;
+    font-size: 22px;
+    color: #b94159;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sequenceConatiner .selectedOptionsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+.selectedOptionsContainer .selectedOptionsContainer_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectedOptionsContainer .selectedOptionsContainer_1 .objImg {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selectedOptionsContainer .selectedOptionsContainer_1 .objText {
+    margin: 12px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.selectedOptionsContainer .selectedOptionsContainer_1 .objActionBtn {
+    background: #800c0c;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 0px;
+}
+
+.selectedOptionsContainer .selectedOptionsContainer_1 .objActionBtn:hover {
+    color: white;
+    background: green;
+}
+
+
+
+.finalDecisionConatiner {
+    display: flex;
+    justify-content: center;
+}
+
+.finalDecisionConatiner .finalDecisionbtn {
+    background: #337e00;
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+.finalDecisionConatiner .finalDecisionbtn:hover {
+    background: #68c729;
+}
+
+
+.sequenceConatiner .optionContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    /* display: none; */
+}
+
+
+.sequenceConatiner .optionContainer .optionContainer_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sequenceConatiner .optionContainer .optionContainer_1 .objImg {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.sequenceConatiner .optionContainer .optionContainer_1 .objText {
+    margin: 12px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sequenceConatiner .optionContainer .optionContainer_1 .objActionBtn {
+    background: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 0px;
+}
+
+.sequenceConatiner .optionContainer .optionContainer_1 .objActionBtn:hover {
+    color: white;
+    background: green;
+}

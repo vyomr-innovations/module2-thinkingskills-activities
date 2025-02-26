@@ -1,0 +1,24 @@
+.headingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headingContainer .mainHeading {
+    font-size: 25px;
+    font-weight: 600;
+    color: #743988;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headingContainer .logo {
+    width: 150px;
+}
+
+.headingContainer .emoji{
+    margin-left: 10px;
+    font-size: 40px;
+}

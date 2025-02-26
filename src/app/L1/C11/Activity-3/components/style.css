@@ -1,0 +1,61 @@
+.contentContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentContainer_1 {
+    display: flex;
+    align-items: center;
+}
+
+.contentContainer_1 .soundWave {
+    width: 65px;
+    cursor: pointer;
+}
+
+.objectHeading {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contentContainer .objectImg {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.contentContainer .truthBtn {
+    background: #b43edc;
+    color: white;
+    padding: 5px 30px;
+    font-size: 22px;
+    border: 0px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resultContainer .resultText {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.resultContainer .nextBtn {
+    background: #029c0c;
+    color: white;
+    padding: 5px 26px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 7px;
+    font-weight: 600;
+    margin-top: 20px;
+}

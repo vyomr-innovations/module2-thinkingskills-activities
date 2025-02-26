@@ -1,0 +1,49 @@
+.slideShowContainer img {
+    margin-bottom: 40px;
+    border: 1px solid #0a4971;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #b0e0ff;
+    width: 350px;
+}
+
+.slideShowContainer .objectName {
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.slideShowContainer .benefitsContainerMain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slideShowContainer .benefitsContainerMain .benefitsContainer {
+    font-family: 'Pacifico', cursive;
+    text-align: left;
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.slideShowContainer img:hover {
+    width: 355px;
+}
+
+.slideShowContainer button {
+    color: #ffffff;
+    padding: 8px 20px;
+    font-size: 18px;
+    background: #2d779c;
+    border: 0px;
+    border-radius: 7px;
+    font-weight: 550;
+}
+
+.slideShowContainer button:hover {
+    font-size: 19px;
+}

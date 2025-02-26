@@ -1,0 +1,20 @@
+.mainContainer .heading{
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #7a840c;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
+}
+
+.mainContainer .headingContainer {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer .headingContainer img {
+    width: 130px;
+}

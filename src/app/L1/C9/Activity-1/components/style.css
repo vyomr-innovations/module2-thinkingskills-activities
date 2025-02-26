@@ -1,0 +1,29 @@
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sliderContainer .objText {
+    font-size: 22px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+.sliderContainer .objImg {
+    width: 360px;
+    border-radius: 7px;
+}
+
+
+.sliderContainer .nextBtn {
+    border: 0px;
+    border-radius: 7px;
+    background-color: #066f1c;
+    font-weight: 600;
+    color: white;
+    padding: 6px 18px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+

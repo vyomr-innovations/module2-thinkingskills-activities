@@ -1,0 +1,42 @@
+.leftContainer .heading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 17px;
+    margin-top: 17px;
+    color: #0e5a8d;
+}
+
+.leftContainer .hero {
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 12px 0 rgb(15 71 106), 0 16px 220px 0 rgb(23 200 234);
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 17px;
+    margin-top: 17px;
+}
+
+.myBtn:hover {
+    font-size: 17px;
+}
+
+
+.rightContainer .content {
+    font-size: 22px;
+    margin-bottom: 18px;
+    background: #ededed;
+    padding: 10px 10px 10px 25px;
+    border-radius: 10px;
+}
+
+.rightContainer .contenf1 {
+    color: #0e5a8d;
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: 5px;
+}
