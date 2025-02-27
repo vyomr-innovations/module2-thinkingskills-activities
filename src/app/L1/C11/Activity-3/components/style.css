@@ -59,3 +59,10 @@
     font-weight: 600;
     margin-top: 20px;
 }
+
+
+
+
+.theFalseMainContainer .options{
+    cursor: pointer;
+}

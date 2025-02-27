@@ -5,7 +5,7 @@ import './style.css'
 import S1_t1 from '../assets/scenarios/scenarios_1/s1_t1.jpeg';
 import S1_t2 from '../assets/scenarios/scenarios_1/s1_t2.jpeg';
 import S1_t3 from '../assets/scenarios/scenarios_1/s1_t3.jpeg';
-import S1_t4 from '../assets/scenarios/scenarios_1/s1_t3.jpeg';
+import S1_t4 from '../assets/scenarios/scenarios_1/s1_t4.jpeg';
 
 import S2_t1 from '../assets/scenarios/scenarios_2/s2_t1.jpeg';
 import S2_t2 from '../assets/scenarios/scenarios_2/s2_t2.jpeg';
@@ -30,7 +30,7 @@ export default function Sequence() {
     const objectsTitle = [
         'Fix the breakfast prep sequence',
         'Fix the gardening sequence sequence',
-        'Fix the sequence to get ready for school'
+        'Fix the Ice Cream Making Sequence'
     ]
     const objects = [
         [
@@ -95,31 +95,31 @@ export default function Sequence() {
             {
                 id: 3,
                 img: S3_t4,
-                text: 'Pack your school bag.',
+                text: 'Put the bowl in the freezer.',
                 seqPlace: 4
             },
             {
                 id: 4,
                 img: S3_t5,
-                text: 'Watch a movie.',
+                text: 'Put the bowl in the oven.',
                 seqPlace: 5
             },
             {
                 id: 1,
                 img: S3_t2,
-                text: 'Brush your teeth.',
+                text: 'Mix the ingredients well.',
                 seqPlace: 2
             },
             {
                 id: 0,
                 img: S3_t1,
-                text: 'Wake up and get out of bed.',
+                text: 'Pour milk and sugar into a bowl.',
                 seqPlace: 1
             },
             {
                 id: 2,
                 img: S3_t3,
-                text: 'Eat your breakfast.',
+                text: 'Add chocolate chips or sprinkles.',
                 seqPlace: 3
             }
         ]
