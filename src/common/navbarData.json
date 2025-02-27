@@ -28,7 +28,7 @@
                 "name": "Fix the Sequence"
             }
         },
-        "C14" : {
+        "C14": {
             "Activity 2 ": {
                 "link": "/L1/C14/Activity-2",
                 "name": "Mystery Box What-If"
@@ -94,6 +94,12 @@
             "Activity 5.1 ": {
                 "link": "/L3/C11/Activity-5-1",
                 "name": "Robotic arm"
+            }
+        },
+        "C14": {
+            "Activity 3 ": {
+                "link": "/L3/C14/Activity-3",
+                "name": "The Innovation Challenge"
             }
         }
     }
