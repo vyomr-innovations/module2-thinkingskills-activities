@@ -11,17 +11,24 @@ export default function Home() {
   return (
     <div className="mainContainer">
       <div className="headingContainer">
-        {/* <center> */}
-          <Image
-            src={RoboticArmLogo}
-            alt="RoboticArmLogo"
-            width={500}
-            height={300}
-          />
-          <h1>Robotic Arm</h1>
-        {/* </center> */}
+        <Image
+          src={RoboticArmLogo}
+          alt="RoboticArmLogo"
+          width={500}
+          height={300}
+        />
+        <h1>Robotic Arm</h1>
       </div>
+
+
       <center>
+        <div className="ins">
+          <ol className="grid grid-cols-2 gap-x-4 list-decimal list-inside">
+            <li>Use your mouse to move the robotic arm.</li>
+            <li>Pick up objects in circular shape by clicking on them.</li>
+            <li>Place them to their respective coloured rectangle.</li>
+          </ol>
+        </div>
         <P5Wrapper sketch={mySketch} />
       </center>
     </div>

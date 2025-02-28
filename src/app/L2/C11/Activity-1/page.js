@@ -14,8 +14,8 @@ export default function Home() {
         <h1 className="heading">Drive Into the Future</h1>
         <Image alt="turtle" src={Turtle} />
       </div>
-      <center>
 
+      <center>
         <div className="ins">
           <ol className="grid grid-cols-2 gap-x-4 list-decimal list-inside">
             <li>Help the sea turtle find laid eggs.</li>
