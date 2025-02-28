@@ -28,9 +28,16 @@ const mySketch = (p) => {
   p.draw = () => {
     p.image(beachGif, 0, 0, p.width, p.height);
 
+    p.noFill();
+    p.stroke(0);
+    p.strokeWeight(5);
+    p.rect(0, 0, p.width, p.height);
+
     p.fill(0);
+    p.strokeWeight(0);
     p.textSize(16);
     p.text(`Eggs Found: ${score}/3`, p.width - 150, 20);
+
 
     if (showHints && hintText) {
       p.fill(255, 255, 255, 200);
@@ -64,7 +71,7 @@ const mySketch = (p) => {
       p.fill(0);
       p.textSize(24);
       p.textAlign(p.CENTER, p.CENTER);
-      p.text("Congratulations!", p.width / 2, p.height / 2);
+      p.text("Congratulations you have found all the eggs!", p.width / 2, p.height / 2);
     }
   };
 
@@ -74,21 +81,48 @@ const mySketch = (p) => {
       this.y = y;
       this.size = 90;
       this.speed = 3;
+      this.direction = 0; // Angle in degrees: 0 = right, 90 = down, 180 = left, 270 = up
     }
 
     update() {
-      if (p.keyIsDown(p.LEFT_ARROW)) this.x -= this.speed;
-      if (p.keyIsDown(p.RIGHT_ARROW)) this.x += this.speed;
-      if (p.keyIsDown(p.UP_ARROW)) this.y -= this.speed;
-      if (p.keyIsDown(p.DOWN_ARROW)) this.y += this.speed;
+      if (p.keyIsDown(p.LEFT_ARROW)) {
+        this.x -= this.speed;
+        this.direction = 180; // Face left
+      }
+      if (p.keyIsDown(p.RIGHT_ARROW)) {
+        this.x += this.speed;
+        this.direction = 0; // Face right
+      }
+      if (p.keyIsDown(p.UP_ARROW)) {
+        this.y -= this.speed;
+        this.direction = 270; // Face up
+      }
+      if (p.keyIsDown(p.DOWN_ARROW)) {
+        this.y += this.speed;
+        this.direction = 90; // Face down
+      }
 
       this.x = p.constrain(this.x, 0, p.width);
       this.y = p.constrain(this.y, 0, p.height);
     }
 
     display() {
-      p.image(turtleImg, this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
+      p.push();
+      p.translate(this.x, this.y);
+
+      if (this.direction === 180) {
+        p.scale(-1, 1); // Mirror the image horizontally for left movement
+        p.imageMode(p.CENTER);
+        p.image(turtleImg, 0, 0, -this.size, this.size);
+      } else {
+        p.rotate(p.radians(this.direction));
+        p.imageMode(p.CENTER);
+        p.image(turtleImg, 0, 0, this.size, this.size);
+      }
+
+      p.pop();
     }
+
 
     dig() {
       for (let i = 0; i < eggs.length; i++) {

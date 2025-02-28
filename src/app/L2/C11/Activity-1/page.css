@@ -1,4 +1,4 @@
-.mainContainer .heading{
+.mainContainer .heading {
     font-size: 22px;
     margin-bottom: 4px;
     font-family: 'Pacifico', cursive;
@@ -9,7 +9,6 @@
 }
 
 .mainContainer .headingContainer {
-    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,4 +16,20 @@
 
 .mainContainer .headingContainer img {
     width: 130px;
+    height: 120px;
+}
+
+.mainContainer .ins {
+    margin-top: -20px;
+}
+
+.mainContainer .ins ol {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.mainContainer .ins ol li {
+    padding-bottom: 5px;
 }
