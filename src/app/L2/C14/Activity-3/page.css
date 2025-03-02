@@ -1,0 +1,15 @@
+.mainContainer .heading {
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #7a840c;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
+}
+
+.mainContainer .headingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
