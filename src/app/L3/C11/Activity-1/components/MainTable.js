@@ -80,7 +80,7 @@ export default function Table() {
           handleInputChange(0, rowIndex + 1, 'existingInventory')
           handleInputChange(Math.abs(pendingInventory), rowIndex, 'inventoryShortfall')
         }
-        resulforTheDay = resulforTheDay + ', you left short of ' + Math.abs(pendingInventory) + ' lemonades'
+        resulforTheDay = resulforTheDay + ', you felt short of ' + Math.abs(pendingInventory) + ' lemonades'
       }
       setDayWiseResult([...dayWiseResult, resulforTheDay]);
 
