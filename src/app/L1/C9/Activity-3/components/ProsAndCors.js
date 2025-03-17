@@ -81,8 +81,7 @@ export default function ProsAndCors() {
                             <div
                                 key={`pro-${index}`}
                                 style={{
-                                    padding:'5px 10px',
-                                    height: '30px',
+                                    padding:'0px 10px',
                                     backgroundColor: '#4CAF50',
                                     marginBottom: '5px',
                                     textAlign: 'center',
@@ -98,8 +97,7 @@ export default function ProsAndCors() {
                             <div
                                 key={`con-${index}`}
                                 style={{
-                                    width: '100px',
-                                    height: '30px',
+                                    padding:'0px 10px',
                                     backgroundColor: '#F44336',
                                     marginBottom: '5px',
                                     textAlign: 'center',

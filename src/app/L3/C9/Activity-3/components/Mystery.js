@@ -71,7 +71,7 @@ export default function Mystery() {
                 </div>
             ) : (
                 <>
-                        <p className="subH">Click on each image to the revel the clues</p>
+                        <p className="subH">Click on each image to the reveal the clues</p>
                         <div className="clueMaincontainer">
                         <div className="clueSubcontainer">
                             <Image
