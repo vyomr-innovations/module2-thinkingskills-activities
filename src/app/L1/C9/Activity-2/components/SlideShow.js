@@ -31,7 +31,7 @@ export default function SlideShow() {
                 'Option A: Captain Braveheart stops to help push the bus and calm the children.',
                 'Option B: Captain Braveheart continues flying and hopes the bus driver figures it out.'
             ],
-            correctAnswer: 1
+            correctAnswer: 0
         },
         {
             img: S3,
@@ -49,14 +49,16 @@ export default function SlideShow() {
                 'Option A: Captain Braveheart brings water from the river to save the crops.',
                 'Option B: Captain Braveheart decides to focus on other problems and hopes the farmer finds another way to water the field.'
             ],
-            correctAnswer: 1
+            correctAnswer: 0
         }
     ]
 
     const handleSelectedOption = (selectedOptionIndex) => {
+        debugger
         let isCorrectAnswerStatus = isCorrectAnswer(selectedOptionIndex)
         if (isCorrectAnswerStatus) {
-            setPoints(points + 1)
+            // setPoints(points + 1)
+            setPoints((prevPoints) => prevPoints+1)
         }
         if (currentObjIndex < objects.length) {
             setCurrentObjIndex(currentObjIndex + 1)
@@ -76,7 +78,7 @@ export default function SlideShow() {
         let result = ''
         if (points == 4) {
             result = 'Captain Braveheart was very happy with the decision'
-        } else if (result == 2 || result == 3) {
+        } else if (points == 2 || points == 3) {
             result = 'Captain Braveheart was nor happy nor sad, he could had done better'
         } else {
             result = 'Captain Braveheart was sad with the decision'
