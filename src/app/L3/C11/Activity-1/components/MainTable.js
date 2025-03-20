@@ -19,20 +19,22 @@ export default function Table() {
   const handleInputChange = (value, rowIndex, field) => {
     const newData = [...data];
     newData[rowIndex][field] = value;
+  
+    if (field === "moreInventoryNeeded") {
+      let newTotalInventory = parseInt(newData[rowIndex].existingInventory) + parseInt(value);
+      if (!isNaN(newTotalInventory)) {
+        newData[rowIndex].totalInventory = newTotalInventory;
+      }
+    }
+  
     setData(newData);
-
+  
     setHighlightedCell({ row: rowIndex, field });
     setTimeout(() => setHighlightedCell(null), 2000);
   };
+  
 
   const isHighlighted = (rowIndex, field) => highlightedCell && highlightedCell.row === rowIndex && highlightedCell.field === field;
-
-
-  const handleKeyDown = (event, rowValues, rowIndex, key) => {
-    if (event.key === 'Enter' && key === "moreInventoryNeeded") {
-      handleUpdateTotal(rowValues, rowIndex, key);
-    }
-  };
 
 
 
@@ -57,35 +59,42 @@ export default function Table() {
     return actualCustomers;
   }
 
+
   const executive = (rowValues, rowIndex) => {
     if (rowValues.totalInventory === 0) {
-      alert('Make sure Inventory Needed field is updated for day : ' + rowValues.day)
-      return
+      alert('Make sure Inventory Needed field is updated for day : ' + rowValues.day);
+      return;
     }
-    let resulforTheDay = 'Result for the day : ' + rowValues.day
-    // console.log(rowValues);
+  
+    let resultForTheDay = 'Result for the day : ' + rowValues.day;
     let actualCustomers = updateActualCustomers(rowValues.temperature, rowIndex);
-    handleInputChange(actualCustomers, rowIndex, 'actualCustomer')
-
+    handleInputChange(actualCustomers, rowIndex, 'actualCustomer');
+  
     setTimeout(function () {
-      let pendingInventory = rowValues.totalInventory - actualCustomers
+      let pendingInventory = rowValues.totalInventory - actualCustomers;
+  
       if (pendingInventory > 0) {
-        if (rowIndex < 5) {
-          handleInputChange(pendingInventory, rowIndex + 1, 'existingInventory')
-          handleInputChange(0, rowIndex, 'inventoryShortfall')
+        // If inventory is left, carry it forward if there is a next day
+        if (rowIndex < data.length - 1) {
+          handleInputChange(pendingInventory, rowIndex + 1, 'existingInventory');
         }
-        resulforTheDay = resulforTheDay + ', you are left with ' + pendingInventory + ' extra lemonades'
+        handleInputChange(0, rowIndex, 'inventoryShortfall'); // No shortfall if there's extra inventory
+        resultForTheDay += `, you are left with ${pendingInventory} extra lemonades`;
       } else {
-        if (rowIndex < 5) {
-          handleInputChange(0, rowIndex + 1, 'existingInventory')
-          handleInputChange(Math.abs(pendingInventory), rowIndex, 'inventoryShortfall')
+        // If inventory is short, update shortfall even for the last day
+        handleInputChange(Math.abs(pendingInventory), rowIndex, 'inventoryShortfall');
+  
+        // Ensure last day's `existingInventory` is not mistakenly updated
+        if (rowIndex < data.length - 1) {
+          handleInputChange(0, rowIndex + 1, 'existingInventory');
         }
-        resulforTheDay = resulforTheDay + ', you felt short of ' + Math.abs(pendingInventory) + ' lemonades'
+        resultForTheDay += `, you fell short of ${Math.abs(pendingInventory)} lemonades`;
       }
-      setDayWiseResult([...dayWiseResult, resulforTheDay]);
-
-    }, 2500)
-  }
+  
+      setDayWiseResult([...dayWiseResult, resultForTheDay]);
+    }, 2500);
+  };
+  
 
   const isReadOnlyColumn = (columnName) => {
     if (columnName === 'predictedCustomer' || columnName === 'moreInventoryNeeded') {
@@ -137,7 +146,7 @@ export default function Table() {
                   {key === 'executive' ? (
                     <>
                       <button className="executiveBtn" onClick={() => executive(row, rowIndex)} >
-                      Execute
+                        Execute
                       </button>
                     </>
                   ) : (
@@ -147,7 +156,6 @@ export default function Table() {
                       readOnly={isReadOnlyColumn(key)}
                       value={row[key]}
                       onChange={(e) => handleInputChange(e.target.value, rowIndex, key)}
-                      onKeyDown={(e) => handleKeyDown(e, row, rowIndex, key)}
                     />
                   )}
                 </td>
