@@ -5,9 +5,9 @@ import MainTable from './components/MainTable';
 
 export default function Home() {
   return (
-    <div className="mainContainer bg-gradient-to-r from-purple-50 to-blue-50 ">
+    <div className="mainContainer">
       <div className="headingContainer">
-        {/* <center>
+        <center>
           <Image
             src={LemonadeStandLogo}
             alt="lemonadeStandLogo"
@@ -15,7 +15,7 @@ export default function Home() {
             height={300}
           />
           <h1>The Lemonade Stand</h1>
-        </center> */}
+        </center>
       </div>
       <MainTable />
     </div>
