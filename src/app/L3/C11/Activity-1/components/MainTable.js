@@ -51,7 +51,7 @@ export default function IceCreamChallenge() {
 
     setError('');
 
-    const maxCustomers = weather === 'Sunny' || weather === 'Hot' ? 50 : 30;
+    const maxCustomers = weather === 'Sunny' || weather === 'Hot' ? 50 : 25;
     const vanillaDemand = Math.floor(Math.random() * maxCustomers);
     const chocolateDemand = Math.floor(Math.random() * maxCustomers);
 
